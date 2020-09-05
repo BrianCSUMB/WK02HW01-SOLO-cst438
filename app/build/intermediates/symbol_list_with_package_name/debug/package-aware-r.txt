@@ -1037,7 +1037,6 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
 id time
 id title
 id titleDividerNoCustom
@@ -1054,6 +1053,7 @@ id up
 id useLogo
 id userName
 id visible
+id welcome
 id withText
 id wrap
 id wrap_content
