@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private Boolean validate(String name, String password) {
+    public Boolean validate(String name, String password) {
         if(name.equals(Username) && password.equals(Password)) {
             return true;
         } else {

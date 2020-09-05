@@ -10,8 +10,27 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class ExampleUnitTest {
+
+
     @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+    public void testValidate() {
+        MainActivity main = new MainActivity();
+
+        String user = "wrong";
+        String pass = "wrong";
+        assertFalse(main.validate(user, pass));
+
+        user = "din_djarin";
+        pass = "Wrong";
+        assertFalse(main.validate(user, pass));
+
+        user = "Wrong";
+        pass = "baby_yoda_ftw";
+        assertFalse(main.validate(user, pass));
+
+        user = "din_djarin";
+        pass = "baby_yoda_ftw";
+        assertTrue(main.validate(user, pass));
     }
 }
+
